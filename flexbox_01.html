@@ -1,0 +1,189 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>felxbox_01</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc2">Privacidad y Control</a>
+          <a href="#secc3">Delitos</a>
+          <a href="#secc4">Fallas Electrónicas</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Introducción</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Las últimas tendencias en alternativas digitales del dinero convencional son evidencia del avance, aunque lento, hacia una economía despojada del dinero en efectivo. Los beneficios de un cambio tan drástico ya son visibles hoy en día. La conveniencia y rapidez que ofrecen los pagos por tarjeta o con “apps” de pago es innegable, las transferencias a larga distancia se agilizan, y además nulifica el riesgo intrínseco de transportar efectivo, o el daño por los elementos. Por no mencionar el espacio físico que se libera.</p>
+						<br>
+						<p>Sin embargo, la moneda virtual también conlleva sus propios contratiempos, algunos no tan evidentes, que comprometerían severamente su utilidad en el caso de que se convierta en la única vía de realizar transacciones.<p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>Un banco centralizado podría, por ejemplo, cobrar intereses por usar sus servicios inclusive para cuentas de ahorro, limitando el crecimiento financiero de sus clientes.</p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Un banco centralizado podría, por ejemplo, cobrar intereses por usar sus servicios inclusive para cuentas de ahorro, limitando el crecimiento financiero de sus clientes.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Privacidad y Control</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El dinero en efectivo permite ejercer el poder adquisitivo de cada persona con casi total libertad, sin preocuparse porque un agente tercero intervenga en sus actividades, aún si estas son perfectamente legales. Claramente es necesario dar evidencia de las compras que uno realiza para dar constancia de que se adhiere a la ley, pero dicha regulación no tendría mucha cabida en situaciones cotidianas como, por ejemplo, la compra de víveres o ciertas comodidades.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En cambio, las monedas virtuales están bajo constante monitoreo por parte de las instituciones bancarias que las emiten; se rastrea toda actividad comercial realizada sin excepciones, y el dinero está bajo control del banco.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img2.png" title="Img 2">
+        		<!--texto para la imagen-->
+        		<p>Tanto tarjetas y terminales, como dispositivos móviles son susceptibles a ataques disruptivos.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Delitos</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En teoría, optar por una moneda virtual inutiliza el efectivo utilizado por organizaciones criminales. Es un severo detrimento en sus operaciones pues niega toda posible compra, y los cargamentos de billetes lavados se volverían inservibles.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En práctica, sin embargo, no hay nada que impida a estos grupos el adaptarse por cualquier medida posible. La “carrera de armas” resultante conllevaría al surgimiento de métodos y herramientas cada vez más sofisticadas que no solo sustentarían el flujo de dinero sucio, sino que también darían paso a cibercrímenes de mayor calibre que afrontaran a la seguridad financiera de los ciudadanos.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img3.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>La ubicuidad de sistemas de pago electrónico resalta la gravedad de problemas energéticos o de sistema. Frenaría el flujo de dinero a gran escala.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Fallas Electrónicas</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Uno de los mayores compromisos que implica optar por una alternativa virtual, en cualquier escenario, es la posibilidad de una falla electrónica. Terminales, cajeros automáticos, teléfonos inteligentes, todos son dispositivos cuyos componentes internos pueden sufrir una descompostura y ser incapaces de cumplir su función.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Con la creciente dependencia en el almacenamiento por medio de la “nube” surge la posibilidad de ser incapaz de acceder a nuestros propios fondos debido a una complicación en la red. Ya sea debido a un fallo en el servidor, perdida de energía durante tormentas, o simplemente estar en una zona con señal telefónica débil, genera nuevos escenarios para los cuales habría muy pocas, o nulas, soluciones.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    	</div>
+
+    	<div class='seccion-contenedor' id="secc5">
+    			<div class="texto-secc">
+    				<h1>Conclusiones</h1>
+    				<p>El prospecto de digitalizar algo tan cotidiano como el dinero ofrece tantos beneficios que es fácil omitir las complicaciones y riesgos que involucra. El deshacerse de la moneda en su totalidad sería un cambio tan drástico con repercusiones severas, especialmente en los sectores de la población que por distintos motivos no puedan adaptarse del todo.</p> 
+    				<br>
+    				<p>Se comprometen aspectos de la privacidad del individuo a favor de la conveniencia, se despoja de un bien físico por la inmediatez de los dispositivos electrónicos, los cuales, a diferencia de billetes y monedas, pueden sufrir un malfuncionamiento a causa de factores fuera del control de uno mismo; es una transición que solo tendría, cuando menos, acogida en países más desarrollados para los cuales las transacciones sin efectivo ya sean la norma absoluta y donde el billete se haya desfazado con anticipación.</p>
+    				<br>
+    			</div>
+
+   		</div> 
+
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/profile.php?id=100007623438717">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://www.instagram.com/noah_tries_and_thus_achieves/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">Todos los derechos a sus respectivos autores.</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
